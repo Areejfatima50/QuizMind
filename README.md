@@ -5,6 +5,9 @@ QuizMind is a practice project which is simple, interactive quiz web app built w
 Timed questions (10 seconds each)
 
 Real-time scoring and progress tracking
+
 Dynamic question and answer rendering
+
 Result screen with performance feedback
+
 Fully responsive UI
