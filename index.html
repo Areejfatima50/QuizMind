@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- supports english -->
+<html lang="en">
+    <head>
+        <!-- supports characters -->
+        <meta charset="UTF-8"/>
+        <!-- make the website reponsive -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Quiz Game</title>
+        <!-- link the css file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+         <!-- div is just like a box to wrap te objects -->
+       <div class= "container">
+        <!-- welcome screen -->
+       <div class="screen active" id="start-screen">
+        <h1>Quiz Time</h1>
+        <p>Test your knowledge with these questions</p>
+        <button id="start-btn">Start Quiz</button>
+       </div>
+      
+       <!-- Question screen -->
+       <div class ="screen" id ="quiz-screen" >
+        <div class ="quiz-header">
+            <!-- id used in javascript and css file -->
+            <h2 id="question-text">Question goes here</h2>
+            <div class="quiz-info">
+                <p>
+                    <!-- spane is an inline tag used when part of a line change or target it with js -->
+                    Question <span id="current-question">1</span> of <span id="total-questions">5</span>
+                </p>
+                <p>Score:<span id="score" >0</span></p>
+
+                <!-- ✅ Add the timer here -->
+                <p>Time Left: <span id="timer">10</span> seconds</p>
+
+
+            </div>
+        </div>
+
+        <div id="answers-container" class="answers-container">
+
+            <!-- Answer button -->
+
+        </div>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+       </div>
+
+       <div id="result-screen" class="screen">
+        <h1>Quiz Results</h1>
+        <div class="result-info">
+            <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span>
+            </p>
+
+            <div id="result-message">Good job!</div>
+        </div>
+        <button id="restart-btn">Restart Quiz</button>
+       </div>
+    </div>
+    <!-- connect the js file -->
+    <script src="script.js"></script>
+    </body>
+</html>
